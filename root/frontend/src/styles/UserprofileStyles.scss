@@ -1,0 +1,38 @@
+.userprofile{
+    height:calc(100vh+margin);
+
+    background: gray;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+   animation: appear  1s linear;
+
+
+
+}
+
+
+.userprofileLeft{
+    height:100vh;
+    position: relative;
+    background: blue;
+    overflow:hidden;
+    &>.imageWrapper{
+       position: absolute;
+        height:100vh;
+         
+        &>img{
+            height:100vh;
+            object-fit: cover;
+            object-position: 20% 80%;
+           
+        }
+    }
+
+}
+
+.userprofileRight{
+    display:grid;
+    justify-content:center;
+    align-items: center;
+
+}
